@@ -1,16 +1,17 @@
-# flutter_adcanced_usecase
+## flutter_adcanced_usecase
 
-A new Flutter project.
+# Auto generator
+- pubspeck.yaml added to,
+auto_route: ^7.8.4
+auto_route_generator: ^7.3.2 (dev)
+build_runner: ^2.4.7 (dev)
 
-## Getting Started
+- create app_router.dart file and initilize 
 
-This project is a starting point for a Flutter application.
+- run build_runner
+terminal -> dart run build_runner build --delete-conflicting-outputs
+Then file app_router.gr.dart will be created
 
-A few resources to get you started if this is your first Flutter project:
+- write @RoutePage() at the beginning of the pages
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- end the run buil_runner
