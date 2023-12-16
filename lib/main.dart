@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //router initialize
     AppRouter appRouter = AppRouter();
     return MaterialApp.router(
       title: 'Flutter Use Case',
