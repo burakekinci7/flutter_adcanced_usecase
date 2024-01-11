@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 
 import 'app_router.gr.dart';
 
+//@AutoRouterConfig(replaceInRouteName: "View,Route")
 @AutoRouterConfig()
 class AppRouter extends $AppRouter {
   @override
