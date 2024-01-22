@@ -19,6 +19,11 @@ dependencies:
   #Network
   connectivity_plus: ^5.0.2  
 
+  #image_picker
+  image_picker: ^1.0.7
+  app_settings: ^5.1.1
+  permission_handler: ^11.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
