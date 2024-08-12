@@ -1,6 +1,6 @@
-## flutter_adcanced_usecase
+# flutter_adcanced_usecase
 
-# Auto generator
+### Auto generator
 - pubspeck.yaml added to,
 auto_route: ^7.8.4
 auto_route_generator: ^7.3.2 (dev)
@@ -15,3 +15,7 @@ Then file app_router.gr.dart will be created
 - write @RoutePage() at the beginning of the pages
 
 - end the run buil_runner
+
+### Hive
+- pubspec initiazlie
+- copy of core package (testing for example) 

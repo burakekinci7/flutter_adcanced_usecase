@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_adcanced_usecase/auto_generator/product/routers/app_router.dart';
-import 'package:flutter_adcanced_usecase/connectivity/core/main/main_build.dart';
-import 'package:flutter_adcanced_usecase/connectivity/network_change_view.dart';
-import 'package:flutter_adcanced_usecase/image_picker/image_picker_view.dart';
+import 'package:flutter_adcanced_usecase/componets/comp_trial_page.dart';
+
 
 void main() => runApp(const MyApp());
 
@@ -12,13 +10,32 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Use Case',
-      home: ImagePickerView(),
-      builder: MainBuild.networkBuild,
+      title: 'Componnetes',
+      home: CompTrialPage(),
     );
   }
 }
 
+/* void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final dir = await getApplicationDocumentsDirectory();
+  Hive.defaultDirectory = dir.path;
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: 'Use Case',
+      home: HiveUserSaveView(),
+      builder: MainBuild.networkBuild,
+    );
+  }
+}
+ */
 
 
 /* 
