@@ -38,6 +38,7 @@ class _CompTrialPageState extends State<CompTrialPage> {
                       keyboardType: TextInputType.multiline,
                       prefixIcon: const Icon(Icons.email),
                     ),
+                    
                   ],
                 ),
               ),

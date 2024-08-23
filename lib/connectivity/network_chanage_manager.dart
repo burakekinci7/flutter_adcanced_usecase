@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 typedef NetworkCallBack = void Function(NetworkResult result);

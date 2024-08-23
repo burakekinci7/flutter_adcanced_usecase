@@ -19,3 +19,6 @@ Then file app_router.gr.dart will be created
 ### Hive
 - pubspec initiazlie
 - copy of core package (testing for example) 
+
+### Form 
+- validate

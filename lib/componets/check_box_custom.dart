@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-class CheckBoxFormField extends FormField<bool> {
-  CheckBoxFormField({
+class CustomCheckBoxFormField extends FormField<bool> {
+  CustomCheckBoxFormField({
     required String title,
     super.key,
-    ValueChanged<bool>? onChanged,
   }) : super(
           initialValue: false,
           validator: (bool? value) => value ?? false ? null : '',
@@ -13,14 +12,12 @@ class CheckBoxFormField extends FormField<bool> {
               children: [
                 if (state.hasError) const Icon(Icons.error, color: Colors.red),
                 Expanded(
-                    child: CheckboxListTile(
-                  value: state.value ?? false,
-                  onChanged: (value) {
-                    state.didChange(value);
-                    onChanged?.call(value ?? false);
-                  },
-                  title: Text(title),
-                ))
+                  child: CheckboxListTile(
+                    value: state.value ?? false,
+                    onChanged: state.didChange,
+                    title: Text(title),
+                  ),
+                ),
               ],
             );
           },
